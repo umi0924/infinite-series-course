@@ -38,5 +38,5 @@ nav:
 # 4. 在线时长统计 (百度统计配置处)
 extra:
   analytics:
-    provider: google 
-    property:G-383253602 
+    provider: google
+    property: G-383253602
