@@ -1,0 +1,42 @@
+site_name: 无穷级数 (Infinite Series)
+site_description: 基于SDT理论的微积分课程模块
+site_author: 你的名字
+
+# 1. 风格配置 (CS61风格核心)
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: indigo # 类似 Berkeley 的深蓝色
+    accent: blue
+  features:
+    - navigation.tabs        # 顶部导航栏
+    - navigation.sections    # 侧边栏分组
+    - navigation.expand      # 默认展开
+    - navigation.top         # 回到顶部按钮
+
+# 2. 功能插件
+markdown_extensions:
+  - pymdownx.arithmatex:    # 开启数学公式支持
+      generic: true
+  - admonition              # 提示框
+  - pymdownx.details        # 折叠内容
+  - attr_list               # 图片调整
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# 3. 网站导航结构 (对应你的四个要求)
+nav:
+  - 🏠 首页: index.md
+  - 📖 Reading (教材): reading.md
+  - 🧠 Review (复习): review.md
+  - 📝 Homework (作业): homework.md
+  - 📂 Material (资料): material.md
+
+# 4. 在线时长统计 (百度统计配置处)
+extra:
+  analytics:
+    provider: google 
+    property:G-383253602 
