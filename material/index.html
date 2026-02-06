@@ -1,0 +1,1042 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="基于SDT理论的微积分课程模块">
+      
+      
+        <meta name="author" content="你的名字">
+      
+      
+      
+        <link rel="prev" href="../homework/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>📂 Material (资料) - 无穷级数 (Infinite Series)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-383253602"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-383253602",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-383253602",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="无穷级数 (Infinite Series)" class="md-header__button md-logo" aria-label="无穷级数 (Infinite Series)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            无穷级数 (Infinite Series)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📂 Material (资料)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  🏠 首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../reading/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📖 Reading (教材)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../review/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🧠 Review (复习)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../homework/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📝 Homework (作业)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📂 Material (资料)
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="无穷级数 (Infinite Series)" class="md-nav__button md-logo" aria-label="无穷级数 (Infinite Series)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    无穷级数 (Infinite Series)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏠 首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📖 Reading (教材)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧠 Review (复习)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../homework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📝 Homework (作业)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📂 Material (资料)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📂 Material (资料)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔬 交互式实验室
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔬 交互式实验室">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎧 级数逼近：抛弃“尾巴”的艺术
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎧 级数逼近：抛弃“尾巴”的艺术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎛️ 实验 1：方波的逼近与截断
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎮 几何级数：上帝的造山运动
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎮 几何级数：上帝的造山运动">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎛️ 实验 2：分形地形生成器
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎲 数列行为：级数的前奏
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎲 数列行为：级数的前奏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎛️ 实验 3：蝴蝶效应模拟器
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔬 交互式实验室
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔬 交互式实验室">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎧 级数逼近：抛弃“尾巴”的艺术
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎧 级数逼近：抛弃“尾巴”的艺术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎛️ 实验 1：方波的逼近与截断
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎮 几何级数：上帝的造山运动
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎮 几何级数：上帝的造山运动">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎛️ 实验 2：分形地形生成器
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎲 数列行为：级数的前奏
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎲 数列行为：级数的前奏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎛️ 实验 3：蝴蝶效应模拟器
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">🌍 级数在现实世界</h1>
+<p>这一页将带你走出课本，看看 <span class="arithmatex">\(\sum\)</span> 符号是如何支撑起你的 MP3 音乐、游戏世界和银行密码的。</p>
+<hr />
+<h2 id="_2">🔬 交互式实验室</h2>
+<p>请点击下方的标签页切换不同的应用场景。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">🎵 信号压缩 (MP3/JPEG)</label><label for="__tabbed_1_2">🏔️ 分形噪声 (World Gen)</label><label for="__tabbed_1_3">🔐 混沌与随机 (Security)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<h3 id="_3">🎧 级数逼近：抛弃“尾巴”的艺术</h3>
+<p>我们每天听的 MP3 和看的 JPEG 图片，本质上都是<strong>“被截断的无穷级数”</strong>。</p>
+<h4 id="1">🎛️ 实验 1：方波的逼近与截断</h4>
+<p><strong>操作指南</strong>：拖动滑块，增加级数项数 <span class="arithmatex">\(N\)</span>。
+* 观察正弦波（圆滑）是如何通过叠加，一步步变成方波（有棱角）的。
+* 注意波形边缘那个顽固的“尖角”，它会消失吗？</p>
+<p><div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; background: #f9f9f9; margin-bottom: 20px;">
+    <label><strong>级数项数 N: <span id="fourier-n-val">1</span></strong></label>
+    <input type="range" id="fourier-n" min="1" max="50" step="2" value="1" style="width: 100%;">
+    <canvas id="fourier-canvas" width="600" height="300" style="width: 100%; background: white; border: 1px solid #ccc; margin-top: 10px;"></canvas>
+</div></p>
+<details class="note">
+<summary>💡 深度解析：这和 MP3 有什么关系？</summary>
+<p><strong>1. 傅里叶级数的魔法</strong>
+数学告诉我们，任何复杂的波形（声音/图像）都可以写成无穷多个正弦波的和：
+$<span class="arithmatex">\(f(x) \approx \sum_{n=1}^{N} a_n \sin(nx)\)</span>$</p>
+<p><strong>2. 压缩的本质 = 截断 (Truncation)</strong>
+* <strong>原始录音</strong>：包含无穷多的细节（<span class="arithmatex">\(N \to \infty\)</span>），文件巨大。
+* <strong>MP3 压缩</strong>：工程师认为人耳听不见超高频的声音，所以直接把级数后面的项（比如 <span class="arithmatex">\(N &gt; 1000\)</span> 的项）<strong>全扔掉</strong>。
+* <strong>结果</strong>：虽然损失了一点点音质，但文件体积变成了原来的 1/10。</p>
+<p><strong>3. 吉布斯现象 (Gibbs Phenomenon)</strong>
+你注意到了吗？无论 <span class="arithmatex">\(N\)</span> 多大，波形跳变的地方总有一个凸起的“猫耳朵”。
+这就是级数截断的代价。在图片中，这表现为物体边缘的“噪点”或“伪影”。工程师一辈子都在和这个数学现象做斗争。</p>
+</details>
+</div>
+<div class="tabbed-block">
+<h3 id="_4">🎮 几何级数：上帝的造山运动</h3>
+<p>你在《我的世界》(Minecraft) 或《塞尔达》里看到的连绵群山，并不是美工一笔笔画的，而是计算机用<strong>几何级数</strong>瞬间算出来的。</p>
+<h4 id="2">🎛️ 实验 2：分形地形生成器</h4>
+<p><strong>操作指南</strong>：调整“粗糙度 (公比 <span class="arithmatex">\(r\)</span>)”。
+* <strong>当 <span class="arithmatex">\(r &lt; 1.0\)</span></strong>：观察地形是否平滑。
+* <strong>当 <span class="arithmatex">\(r &gt; 1.0\)</span></strong>：观察地形发生了什么可怕的变化。</p>
+<p><div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; background: #f9f9f9; margin-bottom: 20px;">
+    <div style="display: flex; gap: 20px;">
+        <div style="flex: 1;">
+            <label><strong>粗糙度 (公比 r): <span id="frac-r-val">0.5</span></strong></label>
+            <input type="range" id="frac-r" min="0.1" max="1.2" step="0.1" value="0.5" style="width: 100%;">
+        </div>
+        <div style="flex: 1;">
+            <label><strong>细节层数: <span id="frac-n-val">6</span></strong></label>
+            <input type="range" id="frac-n" min="1" max="8" step="1" value="6" style="width: 100%;">
+        </div>
+    </div>
+    <div id="frac-status" style="font-weight: bold; color: green; margin: 5px 0;">✅ 级数收敛：自然山脉</div>
+    <canvas id="frac-canvas" width="600" height="300" style="width: 100%; background: white; border: 1px solid #ccc; margin-top: 10px;"></canvas>
+</div></p>
+<details class="tip">
+<summary>📐 深度解析：收敛与发散的视觉化</summary>
+<p><strong>1. 造山的公式</strong>
+我们把大波浪（山体）和小波浪（岩石）加起来：
+$<span class="arithmatex">\(\text{地形} = \sum_{n=0}^{\infty} A^n \cdot \sin(2^n x)\)</span>$
+这里的 <span class="arithmatex">\(A\)</span> 就是你在滑块上调节的 <strong>公比 <span class="arithmatex">\(r\)</span></strong>。</p>
+<p><strong>2. 收敛 = 自然 (<span class="arithmatex">\(r &lt; 1\)</span>)</strong>
+当公比小于 1 时，几何级数收敛。这意味着细节（石头）永远比主体（山）小。
+* <strong>视觉效果</strong>：山脉有起伏，但整体是受控的、自然的。</p>
+<p><strong>3. 发散 = 噪声 (<span class="arithmatex">\(r &gt; 1\)</span>)</strong>
+当公比大于 1 时，几何级数发散。这意味着“细节”比“主体”还要大！
+* <strong>视觉效果</strong>：画面变成了一团乱麻（噪声）。这在数学上叫“处处不可导”，在游戏里叫“地图出 Bug 了”。</p>
+</details>
+</div>
+<div class="tabbed-block">
+<h3 id="_5">🎲 数列行为：级数的前奏</h3>
+<p>在研究级数求和之前，我们必须先看<strong>数列 (Sequence)</strong> 本身的性质。如果数列本身就是疯癫的，它能用来做什么？</p>
+<h4 id="3">🎛️ 实验 3：蝴蝶效应模拟器</h4>
+<p><strong>操作指南</strong>：
+1.  先把 <span class="arithmatex">\(r\)</span> 拉到 <code>2.5</code>，看两条线如何重合（收敛）。
+2.  再把 <span class="arithmatex">\(r\)</span> 拉到 <code>3.9</code>，看两条线如何在某一步突然“分道扬镳”。</p>
+<p><div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; background: #f9f9f9; margin-bottom: 20px;">
+    <label><strong>生长参数 r: <span id="chaos-r-val">3.90</span></strong></label>
+    <input type="range" id="chaos-r" min="2.5" max="4.0" step="0.01" value="3.9" style="width: 100%;">
+    <p style="font-size: 0.9em;">🔵 用户 A (初始密钥 0.5) &nbsp;&nbsp; 🔴 黑客 B (猜测密钥 0.500001)</p>
+    <canvas id="chaos-canvas" width="600" height="300" style="width: 100%; background: white; border: 1px solid #ccc;"></canvas>
+</div></p>
+<details class="warning">
+<summary>🛡️ 深度解析：为什么我们需要发散？</summary>
+<p><strong>1. 密码学的悖论</strong>
+* 如果一个数列是 <strong>收敛</strong> 的（比如 <span class="arithmatex">\(r=2.5\)</span>），它最终会变成一条直线。黑客只要看一眼结尾，就能猜出前面。这叫“不安全”。
+* 为了安全，我们需要一个永远不重复、永远猜不到下一个数的数列。</p>
+<p><strong>2. 蝴蝶效应 (Butterfly Effect)</strong>
+注意观察 <span class="arithmatex">\(r=3.9\)</span> 时的情况：
+用户 A 和黑客 B 的初始密钥只差 <strong>0.000001</strong>（百万分之一）。
+* 起初，两条线紧紧贴在一起。
+* <strong>几步之后</strong>：红线和蓝线彻底分开，位置天差地别。</p>
+<p><strong>3. 结论</strong>
+这就是<strong>确定性混沌</strong>。正是这种“对初始条件的极端敏感性”，保证了你的银行密码虽然是由公式生成的，但除了你（拥有正确初始密钥的人），没人能算得出来。</p>
+</details>
+</div>
+</div>
+</div>
+<hr />
+<hr />
+<script>
+// Lab 1: Fourier
+(function() {
+    setTimeout(function() { // 延迟加载以确保 Canvas 已渲染
+        const slider = document.getElementById('fourier-n');
+        const label = document.getElementById('fourier-n-val');
+        const canvas = document.getElementById('fourier-canvas');
+        if(!canvas) return; 
+        const ctx = canvas.getContext('2d');
+
+        function draw() {
+            const N = parseInt(slider.value);
+            label.textContent = N;
+            const w = canvas.width; const h = canvas.height;
+            ctx.clearRect(0,0,w,h);
+
+            ctx.beginPath(); ctx.strokeStyle='#eee'; ctx.moveTo(0,h/2); ctx.lineTo(w,h/2); ctx.stroke();
+
+            // Gray Square Wave
+            ctx.beginPath(); ctx.strokeStyle='#eee'; ctx.lineWidth=4;
+            for(let x=0; x<w; x++) {
+                const t = (x/w)*4*Math.PI;
+                const y = (t%(2*Math.PI)<Math.PI) ? -0.8 : 0.8;
+                const py = h/2 + y*(h/3);
+                if(x===0) ctx.moveTo(x,py); else ctx.lineTo(x,py);
+            }
+            ctx.stroke();
+
+            // Blue Fourier
+            ctx.beginPath(); ctx.strokeStyle='#2196F3'; ctx.lineWidth=2;
+            for(let x=0; x<w; x++) {
+                let t = (x/w)*4*Math.PI;
+                let sum = 0;
+                for(let i=1; i<=N; i+=2) sum += (1/i)*Math.sin(i*t);
+                let y = h/2 + sum*(h/3)*-1.27;
+                if(x===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+            }
+            ctx.stroke();
+        }
+        slider.addEventListener('input', draw);
+        draw();
+    }, 500);
+})();
+
+// Lab 2: Fractal
+(function() {
+    setTimeout(function() {
+        const rSlider = document.getElementById('frac-r');
+        const nSlider = document.getElementById('frac-n');
+        const rLabel = document.getElementById('frac-r-val');
+        const nLabel = document.getElementById('frac-n-val');
+        const status = document.getElementById('frac-status');
+        const canvas = document.getElementById('frac-canvas');
+        if(!canvas) return;
+        const ctx = canvas.getContext('2d');
+
+        function draw() {
+            const r = parseFloat(rSlider.value);
+            const oct = parseInt(nSlider.value);
+            rLabel.textContent = r; nLabel.textContent = oct;
+
+            if(r>=1.0) { status.textContent="⚠️ 级数发散：噪声"; status.style.color="red"; }
+            else { status.textContent="✅ 级数收敛：自然山脉"; status.style.color="green"; }
+
+            const w=canvas.width; const h=canvas.height;
+            ctx.clearRect(0,0,w,h);
+            ctx.beginPath(); ctx.strokeStyle='#eee'; ctx.moveTo(0,h/2); ctx.lineTo(w,h/2); ctx.stroke();
+
+            ctx.beginPath(); ctx.strokeStyle=(r>=1.0)?'#E91E63':'#4CAF50'; ctx.lineWidth=2;
+            for(let x=0; x<w; x++) {
+                let y=0; let amp=60; let freq=0.02;
+                for(let i=0; i<oct; i++) {
+                    y += amp*Math.sin(x*freq);
+                    amp *= r; freq *= 2;
+                }
+                const py = h/2 + y;
+                if(x===0) ctx.moveTo(x,py); else ctx.lineTo(x,py);
+            }
+            ctx.stroke();
+        }
+        rSlider.addEventListener('input', draw);
+        nSlider.addEventListener('input', draw);
+        draw();
+    }, 500);
+})();
+
+// Lab 3: Chaos
+(function() {
+    setTimeout(function() {
+        const slider = document.getElementById('chaos-r');
+        const label = document.getElementById('chaos-r-val');
+        const canvas = document.getElementById('chaos-canvas');
+        if(!canvas) return;
+        const ctx = canvas.getContext('2d');
+
+        function draw() {
+            const r = parseFloat(slider.value);
+            label.textContent = r.toFixed(2);
+            const w=canvas.width; const h=canvas.height;
+            ctx.clearRect(0,0,w,h);
+            ctx.beginPath(); ctx.strokeStyle='#eee'; ctx.moveTo(0,h); ctx.lineTo(w,h); ctx.stroke();
+
+            let x1=0.5; let x2=0.500001;
+            const steps=60; const stepX=w/steps;
+
+            // User A
+            ctx.beginPath(); ctx.strokeStyle='#2196F3'; ctx.lineWidth=2;
+            let cx1=x1;
+            for(let i=0; i<steps; i++) {
+                let px=i*stepX; let py=h-(cx1*h*0.9);
+                if(i===0) ctx.moveTo(px,py); else ctx.lineTo(px,py);
+                cx1=r*cx1*(1-cx1);
+            }
+            ctx.stroke();
+
+            // Hacker B
+            ctx.beginPath(); ctx.strokeStyle='#F44336'; ctx.lineWidth=2; ctx.setLineDash([5,5]);
+            let cx2=x2;
+            for(let i=0; i<steps; i++) {
+                let px=i*stepX; let py=h-(cx2*h*0.9);
+                if(i===0) ctx.moveTo(px,py); else ctx.lineTo(px,py);
+                cx2=r*cx2*(1-cx2);
+            }
+            ctx.stroke(); ctx.setLineDash([]);
+        }
+        slider.addEventListener('input', draw);
+        draw();
+    }, 500);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
