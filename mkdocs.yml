@@ -22,6 +22,9 @@ markdown_extensions:
   - admonition              # 提示框
   - pymdownx.details        # 折叠内容
   - attr_list               # 图片调整
+  - pymdownx.superfences  # <--- 必须加上这一行！
+  - pymdownx.tabbed:      # <--- 建议加上这行明确配置 Tab
+      alternate_style: true
 
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
